@@ -1,0 +1,455 @@
+:root {
+    --trans:#ffffff5e;
+    --dark:#1d1b1b;
+    --green:#40eb0ccb;
+    --orange:#fabd62;
+    --blue:#04c7f8ee;
+    --yellow:#faeb1e;
+    background-color: var(--dark);
+}
+* {
+   box-sizing: border-box;
+   
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Calibri;
+}
+
+#nav-container {
+    background-color: var(--dark);
+    color: var(--trans);
+    position: sticky;
+    top: 0px;
+}
+.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+}
+.nav-flex label, #humberger {
+    display: none;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    color: var(--blue);
+    padding: 0 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-size: 14px;
+}
+nav ul li a:hover {
+    background-color: var(--blue);
+    color: var(--dark);
+    transition: all 0.5s;
+}
+.nav-brand h2 {
+    margin: 14px 0 0 10px;
+    color: var(--orange);
+    border-bottom: 1.5px solid var(--blue);
+    font-size: 18px;
+    
+}
+.nav-brand h2 span {
+    color: var(--blue);   
+}
+#hero-container {
+    background-image: url(../image/materi_1.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    
+    
+    
+}
+.text h1 {
+    mix-blend-mode: black;
+    text-shadow: 2px 2px 3px rgb(8, 8, 17);
+    text-align: right;
+    padding-right:  35px;
+    padding-top: 35px;
+    color: var(--blue);
+    font-size: 20px;
+    margin-top: 0; 
+    font-weight: bold;    
+}
+
+.text p {
+    mix-blend-mode: black;
+    text-shadow: 2px 2px 3px rgb(8, 8, 17);
+    line-height: 1.5;
+    font-size: 12px;
+    color: var(--blue);
+    text-align: right;
+    padding-right:  35px;
+      
+}
+
+main #about .about-text p {
+    color: #fff;
+}
+
+main {
+    width: 85%;
+    margin: auto;
+}
+
+/* about */
+#about h1 {
+    color: var(--blue);
+    text-align: center;
+    margin-top: 80px;
+}
+
+#about .about-deskripsi {
+    text-align: center;
+    color: #fff;
+}
+
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.about-image, .about-text {
+    width: 50%;
+    margin: 14px;
+}
+
+.about-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-text h2 {
+    color: var(--orange);
+}
+
+.about-text {
+    margin-top: -5px;
+}
+
+/* Services */
+#services h1 {
+    color: var(--blue);
+    text-align: center;
+    margin-top: 80px;
+}
+
+#services h3 {
+    color: var(--green);
+}
+
+#services p {
+    color: #fff;
+}
+#services .services-deskripsi {
+    text-align: center;
+}
+
+.services-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.services-items {
+    width: 25%;
+    text-align: center;
+    padding: 20px 10px;
+}
+ .services-items .fas {
+    color: var(--orange);
+}
+
+.services-items .fab {
+    color: var(--orange);
+}
+
+/* Catalog */
+#catalog h1 {
+    color: var(--blue);
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+.catalog-items h3 {
+    color: var(--orange);
+    text-align: center;
+    margin: 10px 0;
+}
+
+#catalog .catalog-deskripsi {
+    text-align: center;
+    color: #fff;
+}
+
+.catalog-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.catalog-items {
+    width: 33%;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.catalog-items p {   
+    color: #fff;
+    font-size: 13px;
+}
+
+
+.discussion-chat-container  {
+    border-bottom: 1px solid var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 25px;
+    padding: 5px;
+}
+
+.materi span {
+    color: var(--green);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.chat-button button {
+    background-color: var(--green);
+    color: var(--dark);
+    border: none;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.chat-button button:hover {
+    background-color: var(--dark);
+    color: var(--green);
+}
+.catalog-items img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#portfolio h1 {
+    color: var(--blue);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.portfolio-deskripsi {
+    color: #fff;
+    text-align: center;
+}
+.portfolio-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px auto;
+}
+.portfolio-items {
+    width: 33%;
+    padding: 10px;
+}
+.portfolio-items img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Versi Tablet */
+@media screen and (max-width:768px) {
+    /* Tampilkan icon humberger */
+    #nav-container .nav-flex label {
+        display: inline-block;
+        color: var(--blue);
+        font-style: normal;
+        font-size: 18px;
+        padding: 12px;   
+    }
+
+    #hero-container {
+        background-position: 40%;
+    }
+
+    .nav-flex {
+        height: 45px;
+        border-bottom: 1px solid var(--blue);
+    }
+    /* susun ulang menu menjadi vertical */
+    #nav-container .nav-flex {
+        width: 100%;
+    }
+
+    .nav-brand h2 {
+        font-size: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    nav ul li a {
+        display: block;
+        color: var(--dark);
+        background-color: var(--blue);
+        padding: 0 12px;
+        height: auto;
+    }
+    nav ul li a:hover {
+        background-color: var(--dark);
+        color: var(--blue);
+    }
+
+    /* Pindah posisi brand kekanan dan perkecil */
+    .nav-brand h2 {
+        position: absolute;
+        right: 12px;
+        border-bottom: none;
+    }
+    /* Untuk menampilkan / menyembunyikan menu */
+    #nav-container nav {
+        display: none;
+    }
+    #nav-container .nav-flex input:checked ~ nav {
+        display: flex;
+        
+    }
+
+    .text h1 {
+        mix-blend-mode: black;
+        text-align: center;
+        text-shadow: 2px 2px 3px rgb(8, 8, 17);
+        padding-right:  20px;
+        padding-left: 20px;
+        margin-top: 0;
+        padding-top: 600px;
+        color: var(--orange);
+        font-size: 15px; 
+        font-weight: bold;
+         
+    }
+    
+    .text p {
+        mix-blend-mode: black;
+        text-shadow: 2px 2px 3px rgb(8, 8, 17);
+        line-height: 1.5;
+        font-size: 10px;
+        color: var(--orange);
+        text-align: center;
+        padding-right:  20px;
+        padding-left: 20px;
+        font-weight: 700;
+        position: relative;   
+    }
+
+    /* About */
+    .about-flex {
+        flex-direction: column;
+    }
+    .about-image, .about-text {
+        width: auto;
+    }
+
+    .about-deskripsi {
+        font-size: 12px;
+    }
+
+    .about-text h2 {
+        font-size: 15px;
+        color: var(--orange);
+    }
+
+    .about-text p {
+        font-size: 12px;
+    }
+
+    /* Services */
+    .services-items {
+        width: 50%;
+    }
+
+    #services h3 {
+        font-size: 13px;
+    }
+
+    .services-deskripsi {
+        font-size: 13px;
+    }
+
+    .services-items p {
+        font-size: 10px;
+    }
+    
+    /* Catalog */
+    .catalog-items {
+        width: 100%;
+    }
+
+    .catalog-items h3 {
+        font-size: 13px;
+    }
+
+    .catalog-deskripsi {
+        font-size: 12px;
+    }
+
+    .catalog-items p {
+        font-size: 10px;
+    }
+        
+    .materi span {
+        font-size: 13px;
+    }
+
+    .chat-button button {
+        font-size: 10px;
+    }
+
+    .discussion-chat-container {
+        margin-top: 1px;
+    }
+
+    /* Portfolio */
+    .portfolio-items {
+        width: 100%;
+    }
+
+    .portfolio-deskripsi {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+    
